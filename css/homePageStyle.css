@@ -1,45 +1,67 @@
 body {
-    background-image: url("../image/backGround.jpg");
-    background-size: cover;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
 }
 
-table,
-th,
-td {
-    border: 1px solid black;
+header {
+	background-color: #333;
+	color: #fff;
 }
 
-table {
-    margin: 0 auto;
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
 }
 
-th {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+nav ul li {
+	margin: 0 10px;
 }
 
-td {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
+	background-color: #f2f2f2;
+	padding: 50px 0;
 }
 
-.logo {
-    height: 50px;
-    margin-right: 10px;
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
 }
 
-.name {
-    font-size: 16px;
-    font-weight: normal;
-    text-align: center;
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1 {
+	font-size: 72px;
+	margin-top: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	color: #fff;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+footer p {
+	margin: 5px;
+	font-size: 16px;
 }

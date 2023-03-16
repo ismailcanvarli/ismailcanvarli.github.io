@@ -1,0 +1,49 @@
+/*
+    Burada hakkında sayfasınının stilini oluşturdum.
+*/
+
+body {
+    background-image: url("../image/backGround.jpg");
+    background-size: cover;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    margin: 0 auto;
+}
+
+th {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
