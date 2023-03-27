@@ -1,6 +1,6 @@
-/* Navbar */
+/* Navbar still ayarları */
 nav {
-display: flex;
+display: flex; 
 justify-content: space-between;
 align-items: center;
 background-color: #333;
@@ -14,45 +14,51 @@ right: 0;
 z-index: 1;
 }
 
+/* Navbar listesi stil ayarları */
 nav ul {
 display: flex;
 margin: 0;
 padding: 0;
 }
 
+/* Navbar öğeleri stil ayarları */
 nav li {
 margin-right: 20px;
 list-style: none;
 }
 
+/* Navbar öğesi üzerinde fare gelince stil ayarları */
 nav li:hover {
 transform: translateY(-10px);
 transition: all 0.3s ease;
 }
 
+/* Navbar link stil ayarları */
 nav li a {
 color: #fff;
 text-decoration: none;
 font-size: 20px;
 }
 
+/* Logo stil ayarları */
 .logo {
 font-size: 25px;
 font-weight: bold;
 }
 
-/* Section */
+/* Section stil ayarları */
 .section {
 padding: 80px 0;
 }
 
+/* İçerikleri ortalamak için bölümü sınırlayan genişliği belirler */
 .container {
 max-width: 960px;
 margin: 0 auto;
 padding: 0 15px;
 }
 
-/* Footer */
+/* Footer bileşenlerini dikey hizalama, aralarında boşluk bırakma ve arka plan rengini belirler */
 .footer-container {
 display: flex;
 flex-direction: column;
@@ -66,11 +72,17 @@ position: absolute;
 bottom: 0;
 }
 
+/* Sayfa içeriğinin altındaki footer bileşenleriyle çakışmayı önler */
 body {
 position: relative;
 padding-bottom: 80px;
+/* Arka plan fotoğrafı ekledik. */
+background-image: url("images/backgroundImage.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
 }
 
+/* Footer bileşenlerinin yatay hizalamasını ve aralarında boşluk bırakmayı sağlar */
 .footer-icons {
 display: flex;
 flex-direction: row;
@@ -79,6 +91,7 @@ align-items: center;
 margin: 10px 0;
 }
 
+/* Her bir ikonun yuvarlak çerçevesi, boyutu ve arka plan rengini belirler */
 .icon-container {
 display: flex;
 justify-content: center;
@@ -91,15 +104,18 @@ background-color: #ffffff;
 transition: all 0.3s ease-in-out;
 }
 
+/* İkona fareyle üzerine gelindiğinde küçük bir animasyon ekler */
 .icon-container:hover {
 transform: scale(1.1) translateY(-5px);
 }
 
+/* Her bir ikonun boyutunu belirler */
 .icon-container img {
 width: 50px;
 height: 50px;
 }
 
+/* Ayırıcı çizginin uzunluğunu, yüksekliğini ve arka plan rengini belirler */
 .divider {
 width: 70%;
 height: 1px;
