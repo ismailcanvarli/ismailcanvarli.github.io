@@ -1,124 +1,162 @@
 /* Navbar still ayarları */
 nav {
-display: flex; 
-justify-content: space-between;
-align-items: center;
-background-color: #333;
-color: #fff;
-padding: 5px;
-position: fixed;
-height: 70px;
-top: 0;
-left: 0;
-right: 0;
-z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 /* Navbar listesi stil ayarları */
 nav ul {
-display: flex;
-margin: 0;
-padding: 0;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar öğeleri stil ayarları */
 nav li {
-margin-right: 20px;
-list-style: none;
+    margin-right: 20px;
+    list-style: none;
 }
 
 /* Navbar öğesi üzerinde fare gelince stil ayarları */
 nav li:hover {
-transform: translateY(-10px);
-transition: all 0.3s ease;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
 }
 
 /* Navbar link stil ayarları */
 nav li a {
-color: #fff;
-text-decoration: none;
-font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 /* Logo stil ayarları */
 .logo {
-font-size: 25px;
-font-weight: bold;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-/* Section stil ayarları */
+
+/*menü işlemleri için burası*/
+/* Section stilleri */
 .section {
-padding: 80px 0;
-}
+    padding: 80px 0;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
 
 /* İçerikleri ortalamak için bölümü sınırlayan genişliği belirler */
 .container {
-max-width: 960px;
-margin: 0 auto;
-padding: 0 15px;
-}
-
-/* Footer bileşenlerini dikey hizalama, aralarında boşluk bırakma ve arka plan rengini belirler */
-.footer-container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: #f5f5f5;
-padding: 10px;
-width: 100%;
-height: 80px;
-position: absolute;
-bottom: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Sayfa içeriğinin altındaki footer bileşenleriyle çakışmayı önler */
 body {
-position: relative;
-padding-bottom: 80px;
-/* Arka plan fotoğrafı ekledik. */
-background-image: url("images/backgroundImage.jpeg");
-background-repeat: no-repeat;
-background-size: cover;
+    position: relative;
+    padding-bottom: 80px;
+    /* Arka plan fotoğrafı ekledik. */
+    background-image: url("images/backgroundImage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* Footer bileşenlerinin yatay hizalamasını ve aralarında boşluk bırakmayı sağlar */
+p {
+    font-size: 20px;
+}
+
+/* Flexbox stilleri */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    border: 2px solid #000;
+    padding: 20px;
+  }
+
+.left {
+    flex-basis: 30%;
+    margin-right: 20px;
+}
+
+.left img {
+    max-width: 100%;
+}
+
+.right {
+    flex-basis: 60%;
+}
+
+/*flexbox stilleri burada bitiyor.   */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-text {
+    font-size: 18px;
+    margin: 0;
+}
+
 .footer-icons {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
 }
 
-/* Her bir ikonun yuvarlak çerçevesi, boyutu ve arka plan rengini belirler */
+.footer-icons p {
+    font-size: 25px;
+    color: solid #000;
+    margin-right: 50px;
+}
+
 .icon-container {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 80px;
-height: 80px;
-border-radius: 50%;
-margin: 0 10px;
-background-color: #ffffff;
-transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
 }
 
-/* İkona fareyle üzerine gelindiğinde küçük bir animasyon ekler */
 .icon-container:hover {
-transform: scale(1.1) translateY(-5px);
+    transform: scale(1.1) translateY(-5px);
 }
 
-/* Her bir ikonun boyutunu belirler */
 .icon-container img {
-width: 50px;
-height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
-/* Ayırıcı çizginin uzunluğunu, yüksekliğini ve arka plan rengini belirler */
-.divider {
-width: 70%;
-height: 1px;
-margin: 10px 0;
-background-color: #cccccc;
+.footer-line {
+    width: 1px;
+    height: 50px;
+    background-color: #cccccc;
+    margin: 0 10px;
 }
