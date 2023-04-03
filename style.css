@@ -45,35 +45,36 @@ nav {
 
 /********** Sayfanın body kısmı burada başlıyor. *******************/
 
-.section {
-    padding: 80px 0;
-    margin: 0 auto;
-    max-width: 1400px;
-}
-
-/* İçerikleri ortalamak için bölümü sınırlayan genişliği belirler */
-.container {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/* Sayfa içeriğinin altındaki footer bileşenleriyle çakışmayı önler */
+/* Ana stiller */
 body {
     position: relative;
     padding-bottom: 80px;
-    /* Arka plan fotoğrafı ekledik. */
     background-image: url("images/backgroundImage.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-p {
     font-size: 20px;
-}
-
-/* Flexbox stilleri */
-.flex-container {
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .section {
+    padding: 80px 0;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Flexbox stilleri */
+  .flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,23 +82,28 @@ p {
     border: 2px solid #000;
     padding: 20px;
     box-sizing: border-box;
-    /* sınırları dahil etmek için */
-}
-
-.contentContainer {
+  }
+  
+  .flex-container .contentContainer,
+  .flex-container .informationContainer {
+    border: 2px solid #000;
+    padding: 20px;
+  }
+  
+  .contentContainer {
     flex-basis: 30%;
     margin-right: 20px;
     max-width: 400px;
     max-height: 600px;
     overflow: hidden;
-}
-
-.contentContainer img {
+  }
+  
+  .contentContainer img {
     max-width: 100%;
     height: auto;
-}
-
-.informationContainer {
+  }
+  
+  .informationContainer {
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
@@ -106,43 +112,36 @@ p {
     max-width: 800px;
     max-height: 600px;
     overflow: hidden;
-}
-
-.informationContainer h2 {
+  }
+  
+  .informationContainer h2 {
     font-size: 28px;
     margin-bottom: 10px;
-}
-
-.informationContainer p {
+    text-align: center;
+  }
+  
+  .informationContainer p {
     font-size: 20px;
     text-align: center;
-}
-
-.flex-container .contentContainer {
-    border: 2px solid #000;
-    padding: 20px;
-}
-
-.flex-container .informationContainer {
-    border: 2px solid #000;
-    padding: 20px;
-}
-
-@media (max-width: 768px) {
+  }
+  
+  /* Responsive stiller */
+  @media (max-width: 768px) {
     .flex-container {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
-
+  
     .contentContainer {
-        flex-basis: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
+      flex-basis: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
     }
-
+  
     .informationContainer {
-        flex-basis: 100%;
+      flex-basis: 100%;
     }
-}
+  }
+  
 
 
 
@@ -206,11 +205,4 @@ p {
 .icon-container:hover img {
     filter: invert(100%);
     /* Logonun rengini ters çevir */
-}
-
-.footer-line {
-    width: 1px;
-    height: 50px;
-    background-color: #cccccc;
-    margin: 0 10px;
 }
