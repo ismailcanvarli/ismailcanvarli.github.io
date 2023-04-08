@@ -1,45 +1,45 @@
 /*********** Navbar kısmı *********************/
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    position: fixed;
-    height: 70px;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-  
-  nav ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    margin-right: 20px;
-    list-style: none;
-  }
-  
-  nav li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  nav li a:hover {
-    color: deepskyblue;
-    cursor: pointer;
-  }
-  
-  .logo {
-    font: bold 25px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  position: fixed;
+  height: 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav li a:hover {
+  color: deepskyblue;
+  cursor: pointer;
+}
+
+.logo {
+  font: bold 25px;
+}
 
 
 
@@ -47,109 +47,112 @@ nav {
 
 /* Ana stiller */
 body {
-    position: relative;
-    padding-bottom: 80px;
-    background-image: url("images/backgroundImage.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  position: relative;
+  padding-bottom: 80px;
+  background-image: url("images/backgroundImage.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 80px 0;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Flexbox stilleri */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  border: 2px solid #000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.leftContainer {
+  flex-basis: 40%; /* Content conatiner gebişlik ayarı*/
+  margin-right: 20px;
+  max-width: 450px;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.leftContainer h2,
+.rightContainer h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.leftContainer ul{
     font-size: 20px;
-  }
-  
-  .container {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  
-  .section {
-    padding: 80px 0;
-    margin: 0 auto;
-    max-width: 1400px;
-  }
-  
-  h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  /* Flexbox stilleri */
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-    border: 2px solid #000;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .contentContainer {
-    flex-basis: 30%;
-    margin-right: 20px;
-    max-width: 400px;
-    max-height: 600px;
-    overflow: hidden;
-  }
-  
-  .contentContainer img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .informationContainer {
-    flex-basis: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
-    max-height: 600px;
-    overflow: hidden;
-  }
-  
-  .informationContainer h2 {
-    font-size: 28px;
+    text-align: justify;
+    margin-top: 10px;
     margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .informationContainer p {
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  /* Responsive stiller */
-  @media (max-width: 768px) {
-    .flex-container {
-      flex-wrap: wrap;
-    }
-  
-    .contentContainer {
-      flex-basis: 100%;
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  
-    .informationContainer {
-      flex-basis: 100%;
-    }
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.rightContainer {
+  flex-basis: 40%; /* Content conatiner gebişlik ayarı*/
+  margin-right: 20px;
+  max-width: 450px;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.rightContainer h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Responsive stiller */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-wrap: wrap;
   }
 
- /*Bu caption kısmı şunun için kullanıldı. Hakkımda kısmında bulunan
+  .leftContainer {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .rightContainer {
+    flex-basis: 100%;
+  }
+}
+
+/*Bu caption kısmı şunun için kullanıldı. Hakkımda kısmında bulunan
  fotoğrafın üstüne fare geldiğinde fotoğraf sağa kayıyor ve fotoğrafın 
- arkasında yazı gözüküyor*/ 
- .caption {
+ arkasında yazı gözüküyor*/
+.caption {
   display: inline-block;
   position: relative;
   margin: 10px;
   overflow: hidden;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease-in-out;
 }
 
 .caption:hover {
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
 }
 
 .caption img {
@@ -173,22 +176,25 @@ body {
 }
 
 .caption::before {
-  content: '' ; /* Başlık buraya yazılacak */
+  content: '';
+  /* Başlık buraya yazılacak */
   text-align: center;
   height: 30%;
   color: #060606;
   font-size: 40px;
   font-weight: 300;
-  padding: 10px 30px; /* padding değerini azalttık */
+  padding: 10px 30px;
+  /* padding değerini azalttık */
 }
 
 .caption::after {
-  content: 'Android Developer' ;
+  content: 'Android Developer';
   top: 30%;
   height: 70%;
   color: #000000;
   font-size: 40px;
-  padding: 70px 10px; /* padding değerini azalttık */
+  padding: 70px 10px;
+  /* padding değerini azalttık */
   text-align: center;
 }
 
@@ -198,65 +204,64 @@ body {
   transform: translateX(0%);
 }
 
-    
-    
-    
-  
+
+
+
+
 
 /****************** Footer kısmı burada başlıyor. ***********************/
 
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5;
-    padding: 10px;
-    width: 99%;
-    height: 80px;
-    position: absolute;
-    bottom: 0;
-  }
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+  width: 99%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+}
 
 .footer-icons-text {
-    font-size: 25px;
-    color: #000;
-    margin: 0 50px 0 0;
-  }
+  font-size: 25px;
+  color: #000;
+  margin: 0 50px 0 0;
+}
 
 .footer-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
 }
 
 .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 0 10px;
-    background-color: #ffffff;
-    transition: background-color 0.3s ease-in-out;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease-in-out;
+}
 
 /* Footer'daki iconların üstüne fare geldiğinde renk geğiştiriyor. */
 .icon-container:hover {
-    background-color: #2ecc71;
-    /* Yeşil renk olarak değiştir */
+  background-color: #2ecc71;
+  /* Yeşil renk olarak değiştir */
 }
 
 .icon-container img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .icon-container:hover img {
-    filter: invert(100%);
-    /* Logonun rengini ters çevir */
+  filter: invert(100%);
+  /* Logonun rengini ters çevir */
 }
-
