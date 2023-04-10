@@ -129,69 +129,17 @@ h1 {
 
 }
 
-/*Bu caption kısmı şunun için kullanıldı. Hakkımda kısmında bulunan
- fotoğrafın üstüne fare geldiğinde fotoğraf sağa kayıyor ve fotoğrafın 
- arkasında yazı gözüküyor*/
+/* Hakkımda kısmında ki görsel ayarı */
 .caption {
   display: inline-block;
   position: relative;
   margin: 10px;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease-in-out;
-}
-
-.caption:hover {
-  background: rgba(0, 0, 0, 0);
 }
 
 .caption img {
   display: block;
   max-width: 100%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.caption:hover img {
-  transform: translateX(100%);
-}
-
-.caption::before,
-.caption::after {
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-  background: #c8c8c8;
-  transform: translateX(-30%);
-  transition: transform 0.3s ease-in-out;
-}
-
-.caption::before {
-  content: '';
-  /* Başlık buraya yazılacak */
-  text-align: center;
-  height: 30%;
-  color: #060606;
-  font-size: 40px;
-  font-weight: 300;
-  padding: 10px 30px;
-  /* padding değerini azalttık */
-}
-
-.caption::after {
-  content: 'Android Developer';
-  top: 30%;
-  height: 70%;
-  color: #000000;
-  font-size: 40px;
-  padding: 70px 10px;
-  /* padding değerini azalttık */
-  text-align: center;
-}
-
-
-.caption:hover::before,
-.caption:hover::after {
-  transform: translateX(0%);
 }
 
 
