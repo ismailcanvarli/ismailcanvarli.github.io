@@ -144,8 +144,8 @@ h1 {
   
   .img-wrapper > img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   object-fit: cover;
   object-position: center;
   }
@@ -186,7 +186,15 @@ h1 {
   opacity: 1;
   }
 
-
+  .content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 16px;
+  }
+  
 
 /****************** Footer kısmı burada başlıyor. ***********************/
 
