@@ -76,6 +76,34 @@ h1 {
   text-align: center;
 }
 
+.homepage-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-wrapper {
+  margin-top: 20px;
+}
 
 /* Bu side-container, photo-container, information-container ve content-container
 kısmı hakkımda kısı için yapıldı.*/
