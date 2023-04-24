@@ -76,14 +76,13 @@ h1 {
   text-align: center;
 }
 
+/************ Ana sayfa kısmı burada başlıyor. ************/
 .homepage-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-
 
 .download-btn {
   display: inline-block;
@@ -104,9 +103,11 @@ h1 {
 .btn-wrapper {
   margin-top: 20px;
 }
+/************ Anasayfa kısmı burada bitiyor. ************/
+
 
 /* Bu side-container, photo-container, information-container ve content-container
-kısmı hakkımda kısı için yapıldı.*/
+kısmı hakkımda kısmı için yapıldı.*/
 .side-container {
   display: flex;
   flex-direction: column;
@@ -126,10 +127,8 @@ kısmı hakkımda kısı için yapıldı.*/
 .content-container {
   width: 70%;
 }
-
-
-
 /************ Bu kısıma kadar about me kısmı ************/
+
 
 /************ Bu kısım education kısmı ************/
 .right-container h1,
