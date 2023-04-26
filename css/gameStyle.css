@@ -1,0 +1,42 @@
+body {
+    background-color: #FDF5E6;
+    font-family: sans-serif;
+  }
+  
+  .score-container {
+    background-color: #FFEBCD;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .game-container {
+    text-align: center;
+    height: 600px;
+  }
+  
+  .fruits-container {
+    margin-top: 50px;
+    height: 500px;
+    position: relative;
+  }
+  
+  .fruit {
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .fruit:hover {
+    transform: scale(1.1);
+  }
+
+  
