@@ -32,11 +32,31 @@ body {
     position: absolute;
     top: -50px;
     left: 50%;
-    transform: translateX(-50%);
   }
   
   .fruit:hover {
     transform: scale(1.1);
+  }
+
+  .button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .button-container button {
+    background-color: #FFA07A;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .button-container button:hover {
+    background-color: #FF8C69;
   }
 
   

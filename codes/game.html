@@ -2,23 +2,28 @@
 <html>
   <head>
     <title>Fruit Clicker Game</title>
-    <link rel="stylesheet" type="text/css" href="css/gameStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/gameStyle.css">
   </head>
   <body>
     <div class="score-container">
       <span id="score">0</span>
-      <span>Score</span>
+      <span>Skor</span>
     </div>
     <div class="game-container">
-      <h1>Fruit Clicker Game</h1>
+      <h1>Meyve Tıklama  Oyunu</h1>
       <div class="fruits-container">
-        <img class="fruit" src="/images/fruits/apple.png" alt="apple" width="50" height="50">
-        <img class="fruit" src="/images/fruits/peach.png" alt="peach" width="50" height="50">
-        <img class="fruit" src="/images/fruits/pineapple.png" alt="pineapple" width="50" height="70">
-        <img class="fruit" src="/images/fruits/plum.png" alt="plum" width="50" height="50">
-        <img class="fruit" src="/images/fruits/strawberry.png" alt="strawberry" width="50" height="50">
+        <img class="fruit" src="/images/fruits/apple.png" alt="apple" width="100" height="100">
+        <img class="fruit" src="/images/fruits/peach.png" alt="peach" width="100" height="100">
+        <img class="fruit" src="/images/fruits/pineapple.png" alt="pineapple" width="100" height="100">
+        <img class="fruit" src="/images/fruits/plum.png" alt="plum" width="100" height="100">
+        <img class="fruit" src="/images/fruits/strawberry.png" alt="strawberry" width="100" height="100">
       </div>
     </div>
-    <script src="/js/gameScript.js"></script>
+    <div class="button-container">
+      <button onclick="window.location.href='../index.html'">Geri Dön</button>
+      <button id="increase-speed-button">Hızı Azalat</button>
+      <button id="reduce-speed-button">Hızı Arttır</button>
+    </div>
+    <script src="../js/gameScript.js"></script>
   </body>
 </html>
