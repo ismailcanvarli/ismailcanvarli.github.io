@@ -1,3 +1,15 @@
+/************ Sayfanın genel body kısmı burada başlıyor. ************/
+
+body {
+  position: relative;
+  padding-bottom: 80px;
+  background-image: url("images/backgroundImage.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+}
+
+
 /************ Header navbar kısmı ************/
 
 nav {
@@ -43,16 +55,7 @@ nav li a:hover {
 /************ Navbar kısmı burada bitiyor. ************/
 
 
-/************ Sayfanın genel body kısmı burada başlıyor. ************/
 
-body {
-  position: relative;
-  padding-bottom: 80px;
-  background-image: url("images/backgroundImage.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 20px;
-}
 
 .section {
   padding: 80px 0;
