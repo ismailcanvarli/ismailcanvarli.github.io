@@ -1,6 +1,6 @@
 /************ Navbar kısmı ************/
-header{
-  width : 100%;
+header {
+  width: 100%;
 }
 
 nav {
@@ -46,6 +46,7 @@ nav li a:hover {
   padding-left: 20px;
 
 }
+
 /************ Navbar kısmı burada bitiyor. ************/
 
 /************ Sayfanın genel body kısmı burada başlıyor. ************/
@@ -60,17 +61,19 @@ body {
 }
 
 main {
-  margin-top: 80px; /* nav etiketinin yüksekliği */
+  margin-top: 80px;
+  /* nav etiketinin yüksekliği */
 }
 
 
 /************ Section kısmı burada başlıyor. ************/
 .section {
-  padding: 40px 0; /* Bu boyuna aradaki mesafe için veriliyor.*/
+  padding: 40px 0;
+  /* Bu boyuna aradaki mesafe için veriliyor.*/
   top: 0;
   left: 0;
   right: 0;
-  
+
 }
 
 .flex-container {
@@ -116,6 +119,7 @@ h1 {
 .btn-wrapper {
   margin-top: 20px;
 }
+
 /************ Anasayfa kısmı burada bitiyor. ************/
 
 
@@ -140,6 +144,7 @@ kısmı hakkımda kısmı için yapıldı.*/
 .content-container {
   width: 70%;
 }
+
 /************ Bu kısıma kadar about me kısmı ************/
 
 
